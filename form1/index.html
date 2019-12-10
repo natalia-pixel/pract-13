@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banco</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div>
+    <table>
+      <form>
+        <tr>
+                <td>
+                        <table>
+                                <!-- primera fila -->
+                                    <tr>
+                                            <th>Tratamiento: *</th>
+                                            <th>Nombre: *</th>
+                                            <th>Apellido 1: *</th>
+                                            <th> Apellido 2: *</th>
+                                    </tr>
+                                    <!-- segunda fila datos -->
+                                    <tr>
+                                            <td><input type="radio" name="hm" value="h" required> Sr.
+                                                                        <input type="radio" name="hm" value="m" required> Sra.</td>
+                                            <td><input type="text" name="nombre" required></td>
+                                            <td><input type="text" name="apellido1" required></td>
+                                            <td><input type="text" name="apellido2" required></td>
+                                    </tr>
+                                    <!-- tercera fila -->
+                                    <tr>
+                                            <th>Tipo Doc: *</th>
+                                            <th>Nº Doc: *</th>
+                                            <th>Fecha de nacimiento: *</th>
+                                            <th> </th>
+                                    </tr>
+                                    <!-- cuarta fila -->
+                                    <tr>
+                                            <td><select name="menu" required>
+                                                                                <option value="0">...</option>
+                                                                                <option value="1">DNI</option>
+                                                                                <option value="2">NIF</option>
+                                                                                <option value="3">NIA</option>
+                                                                              </select></td>
+                                            <td><input type="text" name="texto" max="9" required></td>
+                                            <td><input type="date" name="fecha" required></td>
+                                            <td></td>
+                                    </tr>
+                                <!-- quinta fila -->
+                                <tr>
+                                        <th>País de nacimiento: *</th>
+                                        <th>Nacionalidad: *</th>
+                                        <th>Segunda nacionalidad:</th>
+                                        <th>País residencia fiscal: *</th>
+                                </tr>
+                                <!-- sexta fila -->
+                                <tr>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">España</option>
+                                                                        <option value="1">Reino Unido</option>
+                                                                        <option value="2">Francia</option>
+                                                                        <option value="3">Alemania</option>
+                                                                      </select></td>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">España</option>
+                                                                        <option value="1">Reino Unido</option>
+                                                                        <option value="2">Francia</option>
+                                                                        <option value="3">Alemania</option>
+                                                                      </select></td>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">España</option>
+                                                                        <option value="1">Reino Unido</option>
+                                                                        <option value="2">Francia</option>
+                                                                        <option value="3">Alemania</option>
+                                                                      </select></td>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">España</option>
+                                                                        <option value="1">Reino Unido</option>
+                                                                        <option value="2">Francia</option>
+                                                                        <option value="3">Alemania</option>
+                                                                      </select></td>
+                                    </tr>
+                                <!-- septima fila -->
+                                <tr>
+                                        <th>Trabajo: *</th>
+                                        <th>Tipo de Actividad: *</th>
+                                        <th>Sector Profesional: *</th>
+                                        <th>Empresa: *</th>
+                                </tr>
+                                <!-- octava fila -->
+                                <tr>
+                                        <td> <select name="menu" required>
+                                                                        <option value="0">....</option>
+                                                                        <option value="1"> </option>
+                                                                        <option value="2"></option>
+                                                                        <option value="3"></option>
+                                                                      </select> </td>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">....</option>
+                                                                        <option value="1"> </option>
+                                                                        <option value="2"></option>
+                                                                        <option value="3"></option>
+                                                                      </select> </td>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">....</option>
+                                                                        <option value="1"> </option>
+                                                                        <option value="2"></option>
+                                                                        <option value="3"></option>
+                                                                      </select></td>
+                                        <td><input type="text" name="casilla" required></td>
+                                </tr>
+                                <!-- novena fila -->
+                                <tr>
+                                        <tr>
+                                                <th>Proposito de la cuenta: *</th>
+                                                <th>Origen de sus ahorros: *</th>
+                                                <th></th>
+                                                <th></th>
+                                        </tr>      
+                                </tr>
+                                <!-- decima fila -->
+                                <tr>
+                                        <td><select name="menu" required>
+                                                                        <option value="0">Ahorro</option>
+                                                                        <option value="1"> </option>
+                                                                        <option value="2"></option>
+                                                                        <option value="3"></option>
+                                                                        </select></td>
+                                        <td><select name="menu" required><option value="0">Nomina o pension</option>
+                                                                        <option value="1">Nomina</option>
+                                                                        <option value="2">Pension</option>
+                                                                        <option value="3"></option>
+                                                                      </select></td>
+                                        <td></td>
+                                        <td></td>
+                                </tr>
+                            </table>
+                </td>
+        </tr>
+
+        <tr>
+                <td>
+                        <!-- tabla domicilio -->
+        <table class="gris">
+                <tbody>
+                  <tr>
+                  <td><p>Tipo de vía: *</p><select name="menu">
+                      <option value="dir1"  required selected>Calle</option>
+                      <option value="dir2" required>Avenida</option>
+                    </td>
+                  <td colspan="4"><p>Dirección: *</p>
+                    <input type="text" name="direccion" size="50" required />
+                  </td>
+                  <td><p>Número: *</p>
+                    <input type="text" name="Número" size="3" required />
+                  </td>
+                  <td><p>Piso: </p>
+                    <input type="text" name="piso" size="3"/>
+                  </td>
+                  </tr>
+                  <tr>
+                      <td><p>Urb./Pol./Otros </p>
+                        <input type="text" name="otros" /></td>
+                      <td colspan="2"><p>Localidad: *</p>
+                        <input type="text" name="localidad" required/></td>
+                      <td colspan="2"><p>Provincia: *</p>
+                        <input type="text" name="provincia" required/></td>
+                      <td colspan="2"><p>Código Postal: *</p>
+                        <input type="text" name="cp" required/></td>
+                  </tr>
+                  <tr>
+                      <td><p>Teléfono móvil: *</p>
+                        <input type="text" name="telf1" required/></td>
+                      <td colspan="2"><p>Teléfono particular:</p>
+                        <input type="text" name="telf2" ></td>
+                      <td colspan="4"><p>Dirección de e-mail: *</p><input type="email" name="correo" size="50" required></td>
+                    </tr>
+                </tbody>
+            </table>        
+                </td>
+        </tr>
+
+        <tr>
+                <td>
+                     <!-- tabla sevicio -->
+        <table class="bordess">
+                <tr>
+                  <td>
+                    <p>Para ofrecerle un mejor servicio nos seria util si posee en otra entidad:</p>
+                    <p><input type="checkbox" name="plan">Plan de pensiones
+                    <input type="checkbox" name="fondos">Fondos
+                    <input type="checkbox" name="acciones">Acciones
+                    <input type="checkbox" name="hipoteca">Hipoteca
+                    <input type="checkbox" name="préstamo">Préstamo
+                    <input type="checkbox" name="seguro">Seguro de Vida</p>
+                  </td>
+                </tr>
+</table>                   
+                </td>
+        </tr>
+
+        <tr>
+                <td>
+                     <!--tabla prueba  -->
+        <table class="prueba">
+                <tbody>
+                        <tr>
+                            <td>
+                              <p>Puede consultar en nuestra Web o solicitarnos toda la 
+                                Informacíon <br>
+                                Precontractual de nuestros productos. Al pulsar "Contnuar" está<br>
+                                aceptando la Cláusura de Protección de datos.<br>
+                                (*) Los campos marcados con asterísco son obligatorios
+                              </p>
+                            </td>
+                            <td>
+                                <button type="submit">
+                              <img src="img/boton.jpg" alt="imagen" width="auto">
+                                </button>
+                                </td>
+                        </tr>
+                </tbody>
+        </table>
+                </td>
+        </tr>
+      </form>
+    </table>
+</div>
+</body>
+</html>
